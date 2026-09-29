@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: var(--font-space-grotesk), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
+
+  --color-frame: #111111;
+  --color-canvas: #F5F5F3;
+  --color-panel: #FDFDFD;
+  --color-subtle: #E6E6E2;
+  --color-accent: #D94826;
+  --color-accent-hover: #BF3E1F;
+  --color-accent-muted: #FBECE8;
+
+  --color-fatal: #D94826;
+  --color-smell: #D97706;
+  --color-opt: #16A34A;
+}
+
+/* Custom blueprint grid and typography reset */
+:root {
+  --font-space-grotesk: 'Space Grotesk', system-ui, sans-serif;
+  --font-jetbrains-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: #F5F5F3;
+  background-image: 
+    linear-gradient(to right, rgba(17, 17, 17, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 17, 17, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: #111111;
+  font-family: var(--font-jetbrains-mono), monospace;
+}
+
+/* Drafting Desk Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F5F3;
+  border-left: 1px solid #E6E6E2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D94826;
+}
+
+/* Code area selection styling */
+::selection {
+  background-color: #111111;
+  color: #FDFDFD;
+}
